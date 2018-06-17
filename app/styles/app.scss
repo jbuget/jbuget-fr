@@ -1,0 +1,27 @@
+@import "ember-bootstrap/bootstrap";
+
+html {
+  margin-top: 56px;
+}
+
+.navbar-nav {
+
+  .nav-link {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    &.social-link {
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.page {
+
+  .page-body {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
