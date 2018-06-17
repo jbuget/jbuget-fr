@@ -22,10 +22,6 @@ module.exports = function(environment) {
       // when it is created
     },
 
-    ghpages: {
-      gitRemoteUrl: 'git@github.com:jbuget/jbuget.github.io.git'
-    },
-
     googleFonts: [
       'Roboto:100,300,400,700,900'
     ],
