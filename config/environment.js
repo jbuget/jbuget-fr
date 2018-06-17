@@ -20,6 +20,20 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+    },
+
+    ghpages: {
+      gitRemoteUrl: 'git@github.com:jbuget/jbuget.github.io.git'
+    },
+
+    googleFonts: [
+      'Roboto:100,300,400,700,900'
+    ],
+
+    // Set or update content security policies
+    contentSecurityPolicy: {
+      'font-src': "'self' fonts.gstatic.com",
+      'style-src': "'self' fonts.googleapis.com"
     }
   };
 

@@ -1,22 +1,2 @@
-<nav class="navbar fixed-top navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="/">jbuget.fr</a>
-    <ul class="navbar-nav flex-row">
-      <li class="nav-item">
-        {{#link-to "contact" class="nav-link"}}Contact{{/link-to}}
-      </li>
-      <li class="nav-item">
-        <a href="https://twitter.com/jbuget" class="nav-link social-link" title="Link to Twitter for username @jbuget">
-          {{fa-icon "twitter"}}
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="https://github.com/jbuget" class="nav-link social-link" title="link to GitHub for username jbuget">
-          {{fa-icon "github"}}
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
+{{app-navbar}}
 {{outlet}}

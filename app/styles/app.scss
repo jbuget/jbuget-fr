@@ -1,5 +1,9 @@
 @import "ember-bootstrap/bootstrap";
 
+html, body {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
 html {
   margin-top: 56px;
 }
@@ -7,8 +11,8 @@ html {
 .navbar-nav {
 
   .nav-link {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     &.social-link {
       padding-top: 0.1rem;
