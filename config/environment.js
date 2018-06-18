@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'jbuget',
+    modulePrefix: 'jbuget-fr',
     environment,
     rootURL: '/',
     locationType: 'auto',
