@@ -6,7 +6,7 @@ module.exports = function(deployTarget) {
     build: {},
     // include other plugin configuration that applies to all deploy targets here
     ghpages: {
-      gitRemoteUrl: 'git@github.com:jbuget/jbuget.github.io.git'
+      gitRemoteUrl: 'git@github.com:jbuget/jbuget-fr.git'
     }
   };
 
