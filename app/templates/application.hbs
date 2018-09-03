@@ -1,2 +1,58 @@
-{{app-navbar}}
-{{outlet}}
+{{#burger-menu animation="push" width=240 as |burger|}}
+  {{#burger.menu dismissOnItemClick="true" itemTagName="li" as |menu|}}
+
+    <ul class="nav-menu nav-menu--pages">
+      {{#menu.item}}
+        {{link-to "Home" 'index' class="nav-link"}}
+      {{/menu.item}}
+      {{#menu.item}}
+        {{link-to 'Contact' 'contact' class="nav-link"}}
+      {{/menu.item}}
+    </ul>
+
+    <ul class="nav-menu nav-menu--social">
+      {{#menu.item}}
+        <a href="https://www.linkedin.com/in/jbuget" class="nav-link social-link" title="Link to LinkedIn for user jbuget" target="jbuget_linkedin">
+          {{fa-icon "linkedin"}}
+        </a>
+      {{/menu.item}}
+
+      {{#menu.item}}
+        <a href="https://twitter.com/jbuget" class="nav-link social-link" title="Link to Twitter for user @jbuget" target="jbuget_twitter">
+          {{fa-icon "twitter"}}
+        </a>
+      {{/menu.item}}
+
+      {{#menu.item}}
+        <a href="https://github.com/jbuget" class="nav-link social-link" title="Link to GitHub for user jbuget" target="jbuget_github">
+          {{fa-icon "github"}}
+        </a>
+      {{/menu.item}}
+    </ul>
+
+
+  {{/burger.menu}}
+
+  {{#burger.outlet}}
+    <nav class="navbar navbar--mobile navbar-light shadow-sm">
+      <button class="hamburger hamburger--3dx {{if burger.state.open 'is-active'}}" type="button" {{action burger.state.actions.toggle}}>
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      {{link-to 'jbuget.fr' 'index' class="navbar-brand"}}
+    </nav>
+
+    <nav class="navbar navbar--desktop navbar-expand-md navbar-light shadow-sm">
+      <div class="container">
+        {{link-to 'jbuget.fr' 'index' class="navbar-brand mr-auto"}}
+        <ul class="navbar-nav">
+          <li class="nav-item">{{link-to 'Contact' 'contact' class="nav-link"}}</li>
+        </ul>
+      </div>
+    </nav>
+
+    {{outlet}}
+
+  {{/burger.outlet}}
+{{/burger-menu}}

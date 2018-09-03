@@ -8,6 +8,9 @@ module.exports = function(defaults) {
       'bootstrapVersion': 4,
       'importBootstrapFont': false,
       'importBootstrapCSS': false
+    },
+    sassOptions: {
+      implementation: require('sass')
     }
   });
 
@@ -23,6 +26,8 @@ module.exports = function(defaults) {
   // modules that you would like to import into your application
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
+
+  //app.import('node_modules/hamburgers/dist/hamburgers.css');
 
   return app.toTree();
 };

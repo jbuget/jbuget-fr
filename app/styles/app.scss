@@ -1,31 +1,44 @@
-@import "ember-bootstrap/bootstrap";
+@import 'ember-bootstrap/bootstrap';
+@import './burger-menu';
 
-html, body {
+html,
+body,
+body > .ember-view {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
   font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 300;
+  color: #222222;
 }
 
-html {
-  margin-top: 56px;
+.navbar--mobile {
+  @include media-breakpoint-up(md) {
+    display: none;
+  }
 }
 
-.navbar-nav {
+.navbar--desktop {
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+}
 
-  .nav-link {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.hamburger {
 
-    &.social-link {
-      padding-top: 0.1rem;
-      padding-bottom: 0.1rem;
-      font-size: 1.5rem;
-    }
+  @include media-breakpoint-up(md) {
+    display: none;
   }
 }
 
 .page {
+  padding: 1.5em 0;
+}
 
-  .page-body {
-    padding-top: 56px;
-    padding-bottom: 56px;
+.container {
+  @include media-breakpoint-up(md) {
+    max-width: 720px;
   }
 }

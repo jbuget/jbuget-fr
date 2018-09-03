@@ -1,0 +1,49 @@
+// Core Styles
+@import 'ember-burger-menu/variables';
+@import 'ember-burger-menu/structure';
+// Animations
+@import 'ember-burger-menu/animations/push';
+@import 'ember-burger-menu/animations/menu-item/stack';
+
+$hamburger-padding-x: 0;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 24px;
+$hamburger-layer-height: 3px;
+$hamburger-layer-color: #222;
+@import 'node_modules/hamburgers/_sass/hamburgers/hamburgers';
+
+.ember-burger-menu {
+
+  .bm-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+
+  .nav-link {
+      color: #222222;
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    a {
+
+      &:hover {
+
+      }
+    }
+
+    .nav-menu--social {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-size: 30px;
+    }
+  }
+}
