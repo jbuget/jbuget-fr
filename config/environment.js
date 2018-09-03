@@ -30,7 +30,23 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       'font-src': "'self' fonts.gstatic.com",
       'style-src': "'self' fonts.googleapis.com"
-    }
+    },
+
+    metricsAdapters: [{
+      name: 'GoogleAnalytics',
+      environments: ['development', 'production'],
+      config: {
+        id: 'UA-93280305-1',
+        // Use `analytics_debug.js` in development
+        debug: environment === 'development',
+        // Use verbose tracing of GA events
+        trace: environment === 'development',
+        // Ensure development env hits aren't sent to GA
+        sendHitTask: environment !== 'development',
+        // Specify Google Analytics plugins
+        require: ['ecommerce']
+      }
+    }]
   };
 
   if (environment === 'development') {
@@ -55,6 +71,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+
   }
 
   return ENV;

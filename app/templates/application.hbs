@@ -47,7 +47,10 @@
       <div class="container">
         {{link-to 'jbuget.fr' 'index' class="navbar-brand mr-auto"}}
         <ul class="navbar-nav">
-          <li class="nav-item">{{link-to 'Contact' 'contact' class="nav-link"}}</li>
+          <li class="nav-item">{{#link-to 'contact' class="nav-link"}}{{fa-icon "envelope"}}{{/link-to}}</li>
+          <li><a href="https://www.linkedin.com/in/jbuget" class="nav-link social-link" title="Link to LinkedIn for user jbuget" target="jbuget_linkedin">{{fa-icon "linkedin"}}</a></li>
+          <li><a href="https://twitter.com/jbuget" class="nav-link social-link" title="Link to Twitter for user @jbuget" target="jbuget_twitter">{{fa-icon "twitter"}}</a></li>
+          <li><a href="https://github.com/jbuget" class="nav-link social-link" title="Link to GitHub for user jbuget" target="jbuget_github">{{fa-icon "github"}}</a></li>
         </ul>
       </div>
     </nav>
