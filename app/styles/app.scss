@@ -11,6 +11,8 @@ body > .ember-view {
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: 300;
   color: #222222;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .navbar--mobile {
@@ -40,6 +42,7 @@ body > .ember-view {
 
 .page {
   padding: 1.5em 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .container {
