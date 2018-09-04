@@ -24,7 +24,12 @@ body > .ember-view {
   @include media-breakpoint-up(md) {
     display: block;
   }
+
+  .navbar-social {
+    font-size: 1.25em;
+  }
 }
+
 
 .hamburger {
 
