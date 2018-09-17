@@ -48,7 +48,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 Compile the dist : `ember build --environment production`
 Move the dist content to repository jbuget.github.io
 
-
 ## Further Reading / Useful Links
 
 * [ember.js](https://emberjs.com/)
