@@ -26,6 +26,10 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('contact');
+
+  this.route('blog', function() {
+    this.route('no-estimate-mode-d-emploi');
+  });
 });
 
 export default Router;
